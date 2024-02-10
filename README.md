@@ -4,11 +4,10 @@ PodRealm is an innovative podcast platform built with Flutter, providing a seaml
 
 ## Screenshots
 
-![Screenshot 1](url_to_screenshot_1)
-*Caption for Screenshot 1*
+![Screenshot 1](flutter_01.png)
 
-![Screenshot 2](url_to_screenshot_2)
-*Caption for Screenshot 2*
+
+![Screenshot 2](flutter_01.png)
 
 ## Features
 
