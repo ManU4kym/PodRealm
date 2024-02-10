@@ -31,6 +31,8 @@ migrate_working_dir/
 .pub/
 /build/
 
+.comments/
+
 # Symbolication related
 app.*.symbols
 
