@@ -1,8 +1,10 @@
 import 'package:boxicons/boxicons.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pod_realm/utils/avatar_ic.dart';
 import 'package:pod_realm/utils/icon_partial.dart';
 import 'package:pod_realm/utils/logo_text.dart';
+import 'package:pod_realm/utils/podcast_type.dart';
 import 'package:pod_realm/utils/texts_fields.dart';
 
 class PodDirectory extends StatelessWidget {
@@ -10,14 +12,14 @@ class PodDirectory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.black54,
       body: Padding(
-        padding: EdgeInsets.only(top: 50, left: 8),
+        padding: const EdgeInsets.only(top: 50, left: 8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               children: [
                 LogoCon(
                   size: 38,
@@ -36,32 +38,61 @@ class PodDirectory extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            TextFields(
+            const TextFields(
               txt: 'Popular artist',
               size: 30,
               color: Color.fromARGB(255, 176, 170, 170),
             ),
-            Row(
-              children: [
-                Avatar(
-                  image: 'assets/avatar1.jpg',
-                ),
-                Avatar(
-                  image: 'assets/avatar.jpg',
-                ),
-                Avatar(
-                  image: 'assets/avatar2.jpg',
-                ),
-                Avatar(
-                  image: 'assets/avatar3.jpg',
-                ),
-                Avatar(
-                  image: 'assets/avatar4.jpg',
-                ),
-              ],
+            const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Avatar(
+                    image: 'assets/avatar1.jpg',
+                  ),
+                  Avatar(
+                    image: 'assets/avatar.jpg',
+                  ),
+                  Avatar(
+                    image: 'assets/avatar2.jpg',
+                  ),
+                  Avatar(
+                    image: 'assets/avatar3.jpg',
+                  ),
+                  Avatar(
+                    image: 'assets/avatar4.jpg',
+                  ),
+                  Avatar(
+                    image: 'assets/avatar1.jpg',
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Text(
+              'Top Podcast of the week',
+              style: GoogleFonts.zeyada(
+                color: Color.fromARGB(255, 168, 167, 167),
+                fontSize: 38,
+              ),
+            ),
+            const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  PodcastType(
+                    text: 'All Podcast',
+                  ),
+                  PodcastType(
+                    text: 'Design',
+                  ),
+                ],
+              ),
             )
           ],
         ),
