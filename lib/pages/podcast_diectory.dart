@@ -18,22 +18,42 @@ class PodDirectory extends StatelessWidget {
         padding: const EdgeInsets.only(top: 50, left: 8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Row(
+            Row(
               children: [
-                LogoCon(
-                  size: 38,
+                Container(
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 18, 22, 1),
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: const Icon(
+                    Boxicons.bx_podcast,
+                    color: Color.fromARGB(235, 246, 246, 246),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text(
+                  "PodRealm",
+                  style: TextStyle(
+                    fontSize: 42,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(
                   width: 65,
                 ),
-                IconPd(
+                const IconPd(
                   iconny: Boxicons.bx_search,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 6,
                 ),
-                IconPd(
+                const IconPd(
                   iconny: Icons.notifications,
                 ),
               ],
@@ -77,7 +97,7 @@ class PodDirectory extends StatelessWidget {
             Text(
               'Top Podcast of the week',
               style: GoogleFonts.zeyada(
-                color: Color.fromARGB(255, 168, 167, 167),
+                color: const Color.fromARGB(255, 168, 167, 167),
                 fontSize: 38,
               ),
             ),
@@ -90,6 +110,15 @@ class PodDirectory extends StatelessWidget {
                   ),
                   PodcastType(
                     text: 'Design',
+                  ),
+                  PodcastType(
+                    text: 'Music',
+                  ),
+                  PodcastType(
+                    text: 'Politics',
+                  ),
+                  PodcastType(
+                    text: 'True Crime',
                   ),
                 ],
               ),

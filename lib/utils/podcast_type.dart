@@ -20,7 +20,7 @@ class _PodcastTypeState extends State<PodcastType> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.only(top: 8.0),
         child: Container(
           height: 50,
           width: 115,
