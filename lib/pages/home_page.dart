@@ -27,7 +27,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          const LogoCon(),
+          const LogoCon(
+            size: 52,
+          ),
           _container(),
           _micDrop(),
         ],

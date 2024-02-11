@@ -2,7 +2,8 @@ import 'package:boxicons/boxicons.dart';
 import 'package:flutter/material.dart';
 
 class LogoCon extends StatelessWidget {
-  const LogoCon({super.key});
+  final double size;
+  const LogoCon({super.key, required this.size});
 
   @override
   Widget build(BuildContext context) {
@@ -26,10 +27,10 @@ class LogoCon extends StatelessWidget {
           const SizedBox(
             width: 15,
           ),
-          const Text(
+          Text(
             "PodRealm",
             style: TextStyle(
-              fontSize: 52,
+              fontSize: size,
               color: Colors.white,
             ),
           )

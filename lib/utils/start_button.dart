@@ -27,9 +27,9 @@ class ButtonS extends StatelessWidget {
                 color: Color.fromARGB(175, 255, 255, 255),
               ),
               Icon(
-                Boxicons.bxs_arrow_to_right,
-                size: 16,
-                color: Color.fromARGB(255, 240, 238, 237),
+                Boxicons.bx_log_in_circle,
+                size: 26,
+                color: Color.fromARGB(255, 219, 197, 186),
               ),
             ],
           ),
