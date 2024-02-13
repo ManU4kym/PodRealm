@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 class Avatar extends StatelessWidget {
   final String image;
 
-  const Avatar({Key? key, required this.image}) : super(key: key);
+   const Avatar({super.key, required this.image});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(4.0),
       child: Container(
-        height: 50,
-        width: 50,
+        height: 70,
+        width: 70,
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 52, 59, 53),
           borderRadius: BorderRadius.circular(55),

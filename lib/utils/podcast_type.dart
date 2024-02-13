@@ -20,14 +20,14 @@ class _PodcastTypeState extends State<PodcastType> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.only(top: 8.0),
+        padding: const EdgeInsets.only(top: 8.0, left:5.0),
         child: Container(
           height: 50,
-          width: 115,
+          width: 105,
           decoration: BoxDecoration(
             color: isPressed
-                ? const Color.fromARGB(255, 85, 101, 64)
-                : const Color.fromARGB(255, 34, 34, 14),
+                ? const Color.fromARGB(255, 119, 71, 49)
+                : const Color.fromARGB(255, 85, 101, 64),
             borderRadius: BorderRadius.circular(25),
           ),
           child: Center(
