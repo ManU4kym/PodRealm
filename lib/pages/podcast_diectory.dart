@@ -44,6 +44,8 @@ class PodDirectory extends StatelessWidget {
                 Avatar(image: 'assets/avatar.jpg'),
                 Avatar(image: 'assets/avatar1.jpg'),
                 Avatar(image: 'assets/avatar2.jpg'),
+                Avatar(image: 'assets/avatar3.jpg'),
+                Avatar(image: 'assets/avatar4.jpg'),
               ],
             ),
           ),
@@ -67,12 +69,54 @@ class PodDirectory extends StatelessWidget {
             ),
           ),
           const Positioned(
-            bottom: 405,
-            child: ImageContainer(),
+            top: 365,
+            child: Row(
+              children: [
+                ImageContainer(
+                  image: 'assets/castty.jpg',
+                ),
+                ImageContainer(
+                  image: 'assets/poddy.jpg',
+                ),
+                ImageContainer(
+                  image: 'assets/jj.jpg',
+                ),
+              ],
+            ),
           ),
+          Positioned(
+              bottom:20,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 18.0),
+                child: Container(
+                            height: 90,
+                            width: 332,
+                            decoration: BoxDecoration(
+                              color:Color.fromARGB(255, 195, 204, 188),
+                              borderRadius: BorderRadius.circular(35),
+                            ),
+                  child: const Padding(
+                    padding:  EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Spacer(),
+                        IconPd(iconny: Boxicons.bx_home_alt),
+                        Spacer(),
+                        IconPd(iconny: Icons.stream),
+                        Spacer(),
+                        IconPd(iconny: Icons.favorite_outline),
+                        Spacer(),
+                        IconPd(iconny: Icons.person),
+                        Spacer(),
+                      ],
+                    ),
+                  ),
+                          ),
+              ))
         ],
       ),
     );
+
   }
 
   _icon() {
