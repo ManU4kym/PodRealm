@@ -1,5 +1,7 @@
 import 'package:boxicons/boxicons.dart';
 import 'package:flutter/material.dart';
+import 'package:pod_realm/pages/podcast_diectory.dart';
+import 'package:pod_realm/routes.dart';
 import 'package:pod_realm/utils/texts_fields.dart';
 
 class ButtonS extends StatelessWidget {
@@ -10,6 +12,11 @@ class ButtonS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: (){
+        Navigator.of(context).push(MaterialPageRoute (
+          builder: (BuildContext context) => const PodDirectory(),
+        ),);
+      },
       child: Container(
         margin: const EdgeInsets.only(left: 30, right: 30),
         height: 50,
